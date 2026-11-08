@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Welcher, was für ein, so ein, solcher: как спросить «какой» и не купить не то платье. Гайд с анимациями, озвучкой и тестом.">
+<meta property="og:title" content="Какой по-немецки">
+<meta property="og:description" content="Welcher, was für ein, so ein, solcher: как спросить «какой» и не купить не то платье. Гайд с анимациями, озвучкой и тестом.">
+<meta name="theme-color" content="#F6F6F3">
+<link rel="icon" href="media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Какой по-немецки</title>
+<link rel="preload" href="assets/fonts/prata-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/prata-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/prata-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/fonts/onest-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<script defer src="assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{--bg:#F6F6F3;--paper:#ECECE8;--ink:#1F1F1E;--ink2:#55554F;--grey:#8E8E88;--dark:#141414;--teal:#2F8F80;--teal2:#257569;--gold:#DAC49B;--gold2:#B99F6F;--goldt:#5B4A2B;--white:#fff;--sil:#CFCFCA;--w:1140px;--in:880px;--gut:clamp(14px,3vw,32px);--f-h:'Prata','Times New Roman',serif;--f-b:'Onest',system-ui,sans-serif;--nom:#DEDED8;--akk:#DAC49B;--dat:#8FD0C4;--gen:#BFC6E0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--f-b);-webkit-font-smoothing:antialiased;overflow-wrap:normal;word-break:normal}
+main{overflow-x:clip}
+img,video,svg{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+p{margin:0;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty}
+h1,h2,h3{margin:0;font-weight:400;text-transform:none;hyphens:manual;-webkit-hyphens:manual;text-wrap:balance}
+[lang=de]{hyphens:manual;-webkit-hyphens:manual}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 var(--gut)}
+.h{font:400 clamp(35px,4.6vw,62px)/1.2 var(--f-h);letter-spacing:-.01em}
+.h i{font-style:normal;color:var(--grey)}
+.pd .h i{color:#9a9a94}
+.h3{font:400 clamp(26px,2.5vw,34px)/1.2 var(--f-h)}
+.lead{font-size:clamp(16px,1.3vw,18px);color:var(--ink2);margin-top:14px;max-width:36em}
+.lead b{color:var(--ink);font-weight:600}
+.pd .lead{color:#B9B9B2}
+.pd .lead b{color:#fff}
+.k{font-weight:700;color:var(--teal2);white-space:nowrap}
+.pd .k{color:var(--gold)}
+.in{max-width:var(--in);margin:0 auto;position:relative;z-index:2}
+.mt{margin-top:clamp(30px,4vw,54px)}
+.mt-s{margin-top:18px}
+.center{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+/* panels with one slanted edge */
+.gap{height:clamp(22px,3vw,40px)}
+.pan{position:relative;isolation:isolate;margin:0 auto;max-width:var(--w);padding:clamp(70px,8vw,112px) clamp(18px,4vw,60px) clamp(50px,6vw,80px)}
+.pan>.bg1,.pan>.bg2{position:absolute;left:0;right:0;z-index:-2;border-radius:clamp(22px,3vw,40px)}
+.pan>.bg1{top:0;bottom:45%;transform:skewY(3.2deg);transform-origin:0 0}
+.pan>.bg2{top:12%;bottom:0;border-top-left-radius:0;border-top-right-radius:0}
+.pan.up>.bg1{top:45%;bottom:0;transform:skewY(-3.2deg);transform-origin:0 100%}
+.pan.up>.bg2{top:0;bottom:12%;border-radius:clamp(22px,3vw,40px) clamp(22px,3vw,40px) 0 0}
+.pan.flat>.bg1{display:none}
+.pan.flat>.bg2{top:0;border-radius:clamp(22px,3vw,40px)}
+.pd{color:#F2F2EE}
+.dec{position:absolute;pointer-events:none;z-index:-1}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:62px;padding:0 34px;border-radius:12px;background:var(--gold);box-shadow:inset 0 -4px 0 var(--gold2);color:var(--goldt);font:700 14.5px/1 var(--f-b);letter-spacing:.03em;text-transform:uppercase;text-align:center;transition:background-color .2s,translate .2s,box-shadow .2s}
+.btn:hover{background:#E7D5B2;translate:0 -2px;box-shadow:inset 0 -4px 0 var(--gold2),0 10px 22px #0000001f}
+.btn:active{translate:0 1px}
+.btn.gr{background:var(--sil);box-shadow:inset 0 -4px 0 #A9A9A4;color:#5e5e58}
+.btn.gr:hover{background:#DEDED9}
+.btn.sm{min-height:44px;padding:0 18px;font-size:12px;border-radius:9px;background:var(--paper);box-shadow:none;color:var(--ink)}
+.btn.sm:hover{background:#E0E0DB}
+.ar{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;background:var(--teal);color:#fff;transition:background-color .2s,scale .2s}
+.ar:hover{background:var(--teal2);scale:1.06}
+.ar.off{background:var(--sil);color:#fff}
+.ar svg{width:17px;height:17px}
+.say{flex:none;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;transition:background-color .2s,scale .2s}
+.say:hover{background:var(--teal2);scale:1.1}
+.say.on{background:var(--gold2)}
+.say svg{width:17px;height:17px}
+.no-tts .say{display:none}
+/* nav */
+.top{position:fixed;top:0;left:0;right:0;z-index:40;background:#F6F6F3f2;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px max(var(--gut),calc((100vw - var(--w))/2 + 60px))}
+.logo{display:flex;align-items:center;gap:12px;font:700 21px/1 var(--f-b);transition:opacity .2s}
+.logo:hover{opacity:.7}
+.logo b{color:var(--gold2);font-weight:700}
+.nv{display:none;gap:30px;font-size:14px;color:var(--grey)}
+.nv a{transition:color .2s}
+.nv a:hover{color:var(--ink)}
+#prog{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:0 50%}
+/* hero */
+.hero{padding-top:74px}
+.hero .pan{padding:clamp(40px,5vw,66px) clamp(18px,4vw,60px) clamp(160px,15vw,190px)}
+.hg{display:grid;gap:26px;position:relative;z-index:2}
+.hero h1{font:400 clamp(36px,4.2vw,58px)/1.16 var(--f-h);letter-spacing:-.012em}
+.hero h1 i{font-style:normal;color:var(--grey)}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+.hero h1 .ln>span{display:block;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.1s}
+.hero h1 .ln:nth-child(3)>span{animation-delay:.2s}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.h-sub{display:flex;gap:14px;margin-top:20px;font-size:17px;align-items:flex-start}
+.h-sub .dots{flex:none;display:flex;gap:4px;margin-top:10px}
+.h-sub .dots i{width:6px;height:6px;border-radius:50%;background:var(--sil)}
+.h-sub b{font-weight:600}
+.hero .btn{margin-top:24px}
+.tiles{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:3}
+.tile{flex:1 1 150px;background:#fff;border-radius:8px;padding:16px 16px;min-width:0;transition:translate .2s}
+.tile:hover{translate:0 -3px}
+.tile b{display:flex;align-items:center;gap:6px;font:400 32px/1 var(--f-h)}
+.tile b i{width:9px;height:9px;border-radius:50%;background:var(--teal)}
+.tile span{display:block;font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.3}
+.herofig{position:relative;min-height:330px;display:flex;justify-content:center;align-items:flex-end}
+.herofig .wm{position:relative;width:min(100%,430px);z-index:2}
+.bub{position:absolute;z-index:3;background:#fff;border-radius:14px;padding:10px 14px;font:600 15px/1.2 var(--f-b);box-shadow:0 8px 22px #0000001c}
+.bub.a{left:0;top:26%;border-bottom-right-radius:3px}
+.bub.b{right:0;top:12%;background:var(--teal);color:#fff;border-bottom-left-radius:3px}
+.lamp{position:absolute;right:0;bottom:40px;width:clamp(120px,15vw,210px);z-index:1;transform-origin:70% 90%}
+.h-books{position:absolute;left:-10px;bottom:62px;width:clamp(120px,15vw,200px);z-index:3}
+.h-tiles{position:absolute;left:clamp(18px,4vw,60px);right:clamp(18px,4vw,60px);bottom:clamp(20px,3vw,34px);z-index:4}
+/* story */
+.two{display:grid;gap:18px;max-width:var(--w);margin:0 auto}
+.two>.pan{margin:0;max-width:none;width:100%;padding:clamp(70px,7vw,96px) clamp(18px,3vw,44px) clamp(36px,4vw,52px)}
+.nar{display:flex;gap:14px;margin-top:16px;color:#BDBDB6;font-size:15.5px}
+.nar i{flex:none;width:18px;height:1px;background:#777;margin-top:12px}
+.chat{display:flex;flex-direction:column;gap:9px;margin-top:22px}
+.bb{max-width:86%;padding:11px 15px;border-radius:15px;font-size:15.5px;line-height:1.32}
+.bb small{display:block;font-size:12.5px;opacity:.72;margin-top:2px}
+.bb.s{align-self:flex-start;background:#F4F4F1;color:#222;border-bottom-left-radius:4px}
+.bb.m{align-self:flex-end;background:#5C9AD6;color:#fff;border-bottom-right-radius:4px}
+.gs .bb:not(.in){opacity:0;translate:0 14px}
+.bb{transition:opacity .35s,translate .4s cubic-bezier(.2,.9,.3,1.2)}
+.endn{font:italic 400 15.5px/1.4 var(--f-b);color:#BDBDB6;text-align:center;margin-top:18px}
+/* store scene */
+.scr{display:grid;gap:0;margin-top:clamp(26px,3vw,40px)}
+.scr-v{position:sticky;top:66px;z-index:5}
+.stage{position:relative;background:#fff;border-radius:20px;height:clamp(280px,32vw,370px);overflow:hidden}
+.q{position:absolute;left:50%;top:14px;translate:-50% 0;z-index:4;background:var(--teal);color:#fff;font:600 clamp(15px,1.5vw,18px)/1.2 var(--f-b);padding:9px 16px;border-radius:12px;white-space:nowrap;transition:background-color .3s}
+.q.w{background:#1F1F1E}
+.a-c{position:absolute;left:50%;bottom:14px;translate:-50% 0;z-index:4;background:var(--gold);color:var(--goldt);font:700 clamp(15px,1.5vw,18px)/1.2 var(--f-b);padding:9px 16px;border-radius:12px;white-space:nowrap;transition:scale .35s cubic-bezier(.2,1.5,.3,1),opacity .25s}
+.a-c.off{scale:.6;opacity:0}
+.rack{position:absolute;left:6%;right:6%;top:58px;bottom:60px;display:flex;align-items:flex-start;justify-content:center;gap:clamp(6px,2vw,26px)}
+.rack::before{content:"";position:absolute;left:0;right:0;top:6px;height:4px;background:#BDBDB7;border-radius:2px}
+.dr{position:relative;flex:0 1 auto;height:100%;max-width:150px;transition:max-width .55s cubic-bezier(.2,.8,.2,1),opacity .4s,scale .5s cubic-bezier(.2,1.3,.3,1),translate .5s,filter .3s}
+.dr svg{height:100%;width:auto}
+.dr.dim{opacity:.22;filter:grayscale(1)}
+.dr.gone{max-width:0;opacity:0}
+.dr.pick{scale:1.08}
+.pointer{position:absolute;right:-60%;top:46%;width:min(50%,330px);z-index:3;transition:right .75s cubic-bezier(.2,.9,.2,1)}
+.pointer.on{right:-7%}
+.st-t{display:flex;flex-direction:column}
+.st{min-height:58vh;display:flex;align-items:center;font-size:clamp(19px,1.9vw,24px);line-height:1.3}
+.st:first-child{min-height:40vh}
+.st:last-child{min-height:44vh}
+.st p{background:#fffffff5;padding:15px 18px;border-radius:12px;opacity:.5;transition:opacity .3s;box-shadow:0 4px 16px #0000000d}
+.st.on p{opacity:1}
+.st b{font-weight:700;color:var(--teal2)}
+.scr.static .scr-v{position:relative;top:0}
+.scr.static .st{min-height:0;padding:7px 0}
+.scr.static .st p{opacity:1}
+.apho{font:400 clamp(28px,3.4vw,46px)/1.22 var(--f-h);text-align:center;margin-top:clamp(30px,4vw,50px)}
+.apho i{font-style:normal;color:var(--grey)}
+/* fork */
+.fork{display:grid;gap:12px;margin-top:clamp(24px,3vw,36px)}
+.sit{background:#fff;border-radius:14px;padding:16px 18px;text-align:center;font-size:17px;font-weight:600;min-height:62px;display:flex;align-items:center;justify-content:center}
+.ends{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.end{background:#fff;border-radius:14px;padding:18px 14px;text-align:center;transition:background-color .3s,color .3s,scale .3s cubic-bezier(.2,1.4,.3,1)}
+.end b{display:block;font:400 clamp(22px,2.3vw,30px)/1.15 var(--f-h)}
+.end span{display:block;font-size:13.5px;margin-top:6px;color:var(--ink2);transition:color .3s}
+.end.hit{background:var(--teal);color:#fff;scale:1.03}
+.end.hit span{color:#fff}
+.ruru{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;font:400 clamp(24px,2.6vw,32px)/1.2 var(--f-h);margin-top:26px}
+.ruru .tag{font:600 13px/1 var(--f-b);background:#fff;padding:7px 10px;border-radius:7px;color:var(--ink2)}
+/* services card */
+.svc{position:relative;background:var(--paper);color:var(--ink);padding:clamp(34px,4vw,50px) clamp(18px,3vw,42px) clamp(26px,3vw,36px);margin-top:clamp(20px,3vw,34px)}
+.svc-bg{position:absolute;inset:0;background:var(--paper);border-radius:22px;transform:skewY(-2.4deg);z-index:-1;transform-origin:0 100%}
+.svcw{position:relative;isolation:isolate}
+.svc-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;position:relative}
+.svc-n{display:flex;align-items:center;gap:8px}
+.svc-n small{color:var(--grey);font-size:12px;max-width:10em;line-height:1.2}
+.svc-l{display:grid;gap:11px 34px;margin-top:20px;position:relative}
+.it{display:grid;grid-template-columns:12px 1fr auto;gap:10px;align-items:center;font-size:15.5px;line-height:1.3}
+.it>i{width:9px;height:9px;border-radius:50%;background:var(--teal)}
+.it .say{width:32px;height:32px}
+.it .say svg{width:14px;height:14px}
+.svc-p{font:400 clamp(22px,2.2vw,29px)/1.2 var(--f-h);margin-top:20px;position:relative}
+/* cases grid */
+.sw{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.op{min-height:44px;padding:0 15px;border-radius:9px;background:#fff;font:600 14.5px/1 var(--f-b);display:inline-flex;align-items:center;justify-content:center;transition:background-color .2s,color .2s,translate .15s}
+.op:hover{background:#E0E0DB;translate:0 -1px}
+.op.on{background:var(--teal);color:#fff}
+.pd .op{background:#2a2a2a;color:#fff}
+.pd .op:hover{background:#3b3b3b}
+.pd .op.on{background:var(--gold);color:var(--goldt)}
+.grid-c{display:grid;gap:9px;margin-top:16px}
+.cc{display:flex;align-items:center;gap:12px;background:#fff;border-radius:10px;padding:11px 12px;color:var(--ink);font:600 16.5px/1.2 var(--f-b)}
+.cc .cs{flex:none;min-width:48px;text-align:center;font:700 12px/1 var(--f-b);padding:8px 7px;border-radius:7px;color:#222}
+.cs.nom{background:var(--nom)}.cs.akk{background:var(--akk)}.cs.dat{background:var(--dat)}.cs.gen{background:var(--gen)}
+.cc mark{background:none;color:var(--teal2);font-weight:800}
+.cc .say{margin-left:auto;width:34px;height:34px}
+/* trap */
+.trap{background:#fff;border-radius:18px;padding:clamp(28px,3vw,38px) 14px 20px;margin-top:clamp(22px,3vw,32px);text-align:center;color:var(--ink);position:relative}
+.tr-w{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;font:600 clamp(18px,2.3vw,28px)/1 var(--f-b)}
+.blk{display:inline-block;padding:10px 12px;border-radius:9px;background:var(--paper);position:relative}
+.blk.dat{background:var(--dat)}
+.blk.fu{transition:opacity .3s}
+.blk .nope{position:absolute;left:50%;top:-14px;translate:-50% 0;background:#C4543C;color:#fff;font:700 11px/1 var(--f-b);padding:5px 7px;border-radius:6px;white-space:nowrap;scale:0;transition:scale .35s cubic-bezier(.2,1.5,.3,1)}
+.trap.go .nope{scale:1}
+.trap.go .fu{opacity:.45}
+.trap p{margin-top:16px;font-size:15.5px;color:var(--ink2)}
+/* direction cards */
+.dc-g{display:grid;gap:16px;margin-top:clamp(24px,3vw,38px)}
+.dc{position:relative;background:#E3E3DF;border-radius:20px;padding:80px 22px 24px;overflow:hidden;transition:translate .25s,box-shadow .25s}
+.dc:hover{translate:0 -4px;box-shadow:0 14px 28px #00000014}
+.dc::before{content:"";position:absolute;left:0;right:0;top:0;height:58px;background:var(--teal);clip-path:polygon(4% 0,100% 0,100% 100%)}
+.dc h3{font:400 clamp(25px,2.4vw,32px)/1.15 var(--f-h)}
+.dc .sub{font-weight:600;font-size:15px;margin-top:5px}
+.dc ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px;font-size:15px}
+.dc li{display:grid;grid-template-columns:8px 1fr;gap:10px;line-height:1.32}
+.dc li::before{content:"";width:6px;height:6px;margin-top:8px;border-radius:50%;background:#C9AE7E}
+.dc .btn{margin-top:16px;width:100%;min-height:54px}
+.who{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;font:600 15.5px/1 var(--f-b);align-items:center}
+.who span{padding:8px 9px;border-radius:7px;background:#F4F4F1;position:relative}
+.who .wrk{background:var(--teal);color:#fff}
+.dc .say{position:absolute;right:16px;top:70px}
+/* before/after */
+.ba{display:grid;gap:12px;margin-top:clamp(24px,3vw,38px)}
+.bap{display:grid;grid-template-columns:1fr;gap:8px}
+.bc{position:relative;background:#fff;color:var(--ink);border-radius:13px;padding:18px 16px 50px;font:600 16.5px/1.3 var(--f-b);min-height:112px;transition:translate .2s}
+.bc:hover{translate:0 -3px}
+.bc em{position:absolute;left:50%;bottom:0;translate:-50% 0;font:600 15px/1 var(--f-b);font-style:normal;padding:8px 18px;border-radius:7px 7px 0 0;background:#8796A6;color:#EDF1F4}
+.bc.af em{background:var(--gold);color:var(--goldt)}
+.bc.bf s{text-decoration-color:#C4543C;text-decoration-thickness:2px}
+.bc small{display:block;font:400 13.5px/1.3 var(--f-b);color:var(--ink2);margin-top:6px}
+/* cases */
+.cs-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.cs-g{display:grid;gap:14px;margin-top:20px}
+.cse{background:#E3E3DF;border-radius:20px;padding:20px;display:flex;flex-direction:column}
+.cse-t{display:flex;gap:14px;align-items:center}
+.cse-t img{width:88px;height:88px;object-fit:contain;background:#F4F4F1;border-radius:12px;padding:8px}
+.cse h3{font:400 clamp(22px,2vw,27px)/1.18 var(--f-h)}
+.cse .de{font-weight:600;margin-top:4px;font-size:15px}
+.cse p{margin-top:12px;font-size:15px;color:var(--ink2)}
+.cse p b{color:var(--ink);font-weight:600}
+.cse .ttl{font:400 19px/1.2 var(--f-h);margin-top:14px}
+.res{margin-top:auto;background:var(--gold);color:var(--goldt);border-radius:12px;padding:13px 16px;font-size:15px;line-height:1.35}
+.res b{font-weight:700}
+.cse .sp{height:14px}
+/* quiz */
+.qz{max-width:680px;margin:clamp(22px,3vw,34px) auto 0}
+.qz-p{font-size:13px;color:var(--grey);margin-bottom:6px}
+.qz-q{font:400 clamp(24px,2.4vw,32px)/1.2 var(--f-h);margin-bottom:14px}
+.qz-o{display:grid;gap:9px}
+.qo{display:block;width:100%;text-align:left;padding:15px 18px;background:#F4F4F1;border-radius:11px;font:600 16px/1.25 var(--f-b);transition:background-color .2s,translate .15s}
+.pl-w .qo{background:#fff}
+.qo:hover{background:#E6E6E1;translate:0 -1px}
+.qo.ok{background:var(--teal);color:#fff}
+.qo.no{background:#C4543C;color:#fff}
+.qo[disabled]{cursor:default;translate:0}
+.qz-w{margin-top:12px;padding:13px 16px;background:#E3E3DF;border-radius:11px;display:flex;gap:12px;align-items:center;font-size:15.5px}
+.qz-w[hidden]{display:none}
+.qz-n{margin-top:14px}
+.big{font:400 clamp(58px,8vw,100px)/1 var(--f-h);text-align:center}
+/* exercise */
+.exr{display:grid;gap:10px;margin-top:clamp(22px,3vw,32px)}
+.xr{background:#fff;border-radius:14px;padding:16px}
+.xr-q{font:600 17px/1.3 var(--f-b)}
+.xr-q u{text-decoration:none;display:inline-block;min-width:34px;text-align:center;border-bottom:2px solid var(--teal);color:var(--teal2)}
+.xr small{display:block;color:var(--grey);font-size:13.5px;margin-top:2px}
+.xr-b{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.xb{min-height:40px;min-width:44px;padding:0 11px;border-radius:8px;background:#F0F0EC;font:600 14px/1 var(--f-b);display:inline-flex;align-items:center;justify-content:center;transition:background-color .15s,translate .15s}
+.xb:hover{background:#E0E0DB;translate:0 -1px}
+.xb.on{background:var(--ink);color:#fff}
+.xr-a{margin-top:10px;font-size:15px;display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.xr-a[hidden]{display:none}
+.xr-a svg{width:17px;height:17px;flex:none}
+.xr-a b{font-weight:700}
+.sc{text-align:center;font:400 26px/1.2 var(--f-h);margin-top:16px}
+/* cheat */
+.ch-g{display:grid;gap:12px;margin-top:clamp(24px,3vw,36px)}
+.ch{background:#fff;border-radius:14px;padding:18px;transition:translate .2s}
+.ch:hover{translate:0 -3px}
+.ch b{display:block;font:400 22px/1.2 var(--f-h)}
+.ch>span{display:block;font-size:14.5px;color:var(--ink2);margin-top:4px}
+.endl{text-align:center;margin-top:clamp(26px,3vw,40px)}
+.endl .apho{margin-top:0}
+.endl p+p{margin-top:12px;color:var(--ink2)}
+/* ad */
+.dkg{display:grid;gap:22px;align-items:center}
+.dkfig{position:relative;display:flex;justify-content:center}
+.dkfig img{width:min(100%,430px)}
+.bad-g{position:absolute;right:0;top:10px;background:var(--teal);color:#fff;border-radius:10px;padding:12px 16px;rotate:3deg;text-align:center;z-index:3}
+.bad-g b{display:block;font:400 26px/1 var(--f-h)}
+.bad-g span{font-size:11.5px}
+.bul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:13px;font-size:15.5px;line-height:1.35}
+.bul li{display:grid;grid-template-columns:11px 1fr;gap:12px;color:#CFCFC9}
+.bul li::before{content:"";width:11px;height:11px;margin-top:5px;border-radius:50%;background:var(--gold)}
+.bul b{color:#fff;font-weight:600}
+.dst{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.dst div{background:#1E1E1E;border-radius:10px;padding:13px 14px;flex:1 1 110px;min-width:0;text-align:center;transition:translate .2s}
+.dst div:hover{translate:0 -3px}
+.dst b{display:block;font:400 clamp(24px,2.6vw,32px)/1 var(--f-h);color:#fff}
+.dst span{display:block;font-size:12px;color:#9a9a94;margin-top:6px}
+.pain{display:grid;gap:10px;margin-top:22px}
+.pain h3{color:#fff}
+.pain p{color:#CFCFC9}
+.gal{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:14px;margin-top:clamp(24px,3vw,36px)}
+.bf{margin:0;background:#fff;border-radius:12px;overflow:hidden;color:var(--ink);box-shadow:0 8px 22px #0000000f;transition:translate .25s,box-shadow .25s}
+.bf:hover{translate:0 -4px;box-shadow:0 16px 30px #0000001c}
+.bf .br{display:flex;gap:6px;padding:9px 12px;background:#EFEFEB}
+.bf .br i{width:10px;height:10px;border-radius:50%;background:#C8C8C2}
+.bf .br i:nth-child(1){background:#ED6A5E}.bf .br i:nth-child(2){background:#F4BF4F}.bf .br i:nth-child(3){background:#62C554}
+.bf img,.bf video{width:100%}
+.bf figcaption{padding:10px 14px 12px;font:600 13.5px/1.3 var(--f-b)}
+.med{display:grid;gap:18px;align-items:center;margin-top:clamp(24px,3vw,36px)}
+.pf{position:relative;width:min(100%,270px);margin:0 auto;border:8px solid #111;border-radius:34px;overflow:hidden;background:#111}
+.pf video,.pf img{width:100%}
+.cap{text-align:center;font-weight:600;font-size:14.5px;margin-top:10px}
+.rev{display:flex;justify-content:center;margin-top:clamp(22px,3vw,34px)}
+.rev img{width:min(100%,540px);border-radius:12px;transition:translate .25s}
+.rev img:hover{translate:0 -3px}
+.tf-g{display:grid;gap:14px;margin-top:clamp(24px,3vw,36px)}
+.tf{position:relative;background:var(--paper);color:var(--ink);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;transition:translate .25s}
+.tf:hover{translate:0 -4px}
+.tf.best{background:#fff}
+.tf h3{font:400 clamp(27px,2.5vw,33px)/1.1 var(--f-h)}
+.tf .s{font-size:14px;color:var(--ink2);margin-top:4px}
+.tf ul{list-style:none;margin:14px 0;padding:0;display:grid;gap:8px;font-size:14.5px}
+.tf li{display:grid;grid-template-columns:18px 1fr;gap:8px;line-height:1.3}
+.tf li svg{width:16px;height:16px;margin-top:2px;color:var(--teal)}
+.tf li.x{color:#9b9b95}
+.tf li.x svg{color:#b6b6b0}
+.tf .pr{font:400 clamp(30px,3vw,38px)/1.1 var(--f-h);margin-top:auto}
+.tf .wa{font-size:13.5px;color:var(--ink2);min-height:20px}
+.tf .btn{margin-top:12px;width:100%}
+.rib{position:absolute;right:14px;top:-12px;background:var(--teal);color:#fff;font:600 12.5px/1 var(--f-b);padding:8px 11px;border-radius:7px;rotate:2deg}
+.note{text-align:center;font-size:15px;color:var(--ink2);margin-top:18px}
+.pd .note{color:#BDBDB6}
+details.ac{background:#222;border-radius:12px;margin-top:9px}
+details.ac>summary{list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 18px;font:400 clamp(18px,1.7vw,21px)/1.2 var(--f-h);cursor:pointer;color:#fff;transition:color .2s}
+details.ac>summary:hover{color:var(--gold)}
+details.ac>summary::-webkit-details-marker{display:none}
+details.ac>summary svg{flex:none;width:18px;height:18px;transition:rotate .25s;color:var(--gold)}
+details.ac[open]>summary svg{rotate:45deg}
+details.ac .bd{padding:0 18px 16px;font-size:15px;color:#CFCFC9}
+.ext{display:grid;gap:10px;margin-top:clamp(22px,3vw,34px)}
+.et{background:#fff;border-radius:14px;padding:18px;text-align:center;transition:translate .2s}
+.et:hover{translate:0 -3px}
+.et h3{font:400 22px/1.2 var(--f-h)}
+.et b{display:block;font:400 clamp(44px,5vw,64px)/1.05 var(--f-h);color:var(--teal2)}
+.et span{font-size:14px;color:var(--ink2)}
+.mods{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px}
+.md{background:#fff;border-radius:9px;padding:11px 14px;font:600 14px/1 var(--f-b);transition:translate .2s,background-color .2s}
+.md:hover{translate:0 -2px;background:var(--gold)}
+.ms{display:grid;gap:14px;margin-top:clamp(22px,3vw,34px);align-items:center}
+.mc{background:#fff;border-radius:14px;padding:16px}
+.mc h3{font:400 22px/1.2 var(--f-h);margin-bottom:8px}
+.mq{display:flex;gap:9px;align-items:center;font-size:14px;padding:9px 11px;border-radius:8px;background:#F0F0EC;margin-top:6px;transition:background-color .3s,opacity .3s,translate .4s cubic-bezier(.2,1.3,.3,1)}
+.mq svg{width:14px;height:14px;flex:none;color:var(--teal)}
+.mq.bad svg{color:#C4543C}
+.mq.pk{background:#F4DDD5}
+.mi{opacity:.15;translate:18px 0}
+.mi.on{opacity:1;translate:0 0}
+.cnt{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--teal);color:#fff;font:700 13px/1 var(--f-b);margin-left:6px;vertical-align:3px}
+/* CTA flatlay */
+.ctag{display:grid;gap:12px;align-items:center}
+.lay{position:relative;width:min(100%,500px);aspect-ratio:1/1;margin:0 auto}
+.lay .wood{position:absolute;inset:0;width:100%}
+.lay .env{position:absolute;left:6%;top:14%;width:62%}
+.lay .card{position:absolute;right:6%;bottom:10%;width:46%;background:#fbfbf9;border-radius:6px;padding:14% 7% 6%;text-align:center;rotate:6deg;box-shadow:0 12px 26px #0000002e}
+.lay .card b{display:block;font:400 clamp(16px,2.2vw,23px)/1.15 var(--f-h)}
+.lay .card span{display:block;font-size:clamp(10px,1vw,12px);color:var(--ink2);margin-top:6px}
+.cubes{display:flex;gap:5px;justify-content:center;margin-top:10px}
+.cubes i{font:400 clamp(22px,3.4vw,38px)/1 var(--f-h);font-style:normal;background:#2a2b2d;color:#fff;border-radius:7px;padding:.28em .32em;min-width:1.2em;text-align:center}
+.lay .ol{position:absolute;right:0;bottom:-6%;width:40%}
+.ctab{background:#F4F4F1;border-radius:18px;padding:22px}
+.ctab .btn{width:100%;margin-top:14px}
+.ctab small{display:block;font-size:12.5px;color:var(--grey);text-align:center;margin-top:10px}
+.lst{display:grid;gap:9px;font-size:15px}
+.lst div{display:flex;gap:9px;align-items:center;background:#E8E8E3;border-radius:10px;padding:12px 14px;font-weight:600}
+.lst svg{width:16px;height:16px;color:var(--teal);flex:none}
+/* contact */
+.lk-g{display:grid;gap:12px;align-items:center}
+.lk{display:flex;align-items:center;gap:12px;min-height:66px;padding:0 20px;border-radius:12px;color:#fff;font:700 15.5px/1.2 var(--f-b);transition:translate .2s,background-color .2s}
+.lk:hover{translate:0 -3px}
+.lk svg{width:27px;height:27px;flex:none}
+.lk.tg{background:#5AA7DC}.lk.tg:hover{background:#4C97CB}
+.lk.gd{background:var(--teal)}.lk.gd:hover{background:var(--teal2)}
+.lk.ex{background:#8FA05C}.lk.ex:hover{background:#7E8F50}
+.lk.pr{background:#C89B5A}.lk.pr:hover{background:#B88B4A}
+.phw{position:relative;display:flex;justify-content:center}
+.phm{width:190px;background:#fff;border:7px solid #1b1b1b;border-radius:30px;overflow:hidden;rotate:6deg;box-shadow:0 22px 40px #0000002b}
+.phm .tp{display:flex;align-items:center;gap:7px;padding:12px 11px;background:#F0F0EC;font:700 11px/1.1 var(--f-b)}
+.phm .tp i{width:14px;height:14px;border-radius:50%;background:#E5564A;margin-left:auto;flex:none}
+.phm .tp i+i{background:#4EBA6F;margin-left:0}
+.phm img{width:100%;height:230px;object-fit:cover;object-position:50% 10%}
+.foot{display:grid;gap:18px;font-size:13.5px;color:#BDBDB6}
+.foot b{font:700 20px/1 var(--f-b);color:#fff}
+.foot b span{color:var(--gold)}
+.foot a{transition:color .2s;color:#BDBDB6}
+.foot a:hover{color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:45;background:#141414;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px var(--gut) calc(9px + env(safe-area-inset-bottom,0px));translate:0 120%;transition:translate .35s}
+.dock.show{translate:0 0}
+.dock p{font-size:13px;line-height:1.2}
+.dock p b{display:block;font:400 21px/1 var(--f-h)}
+.dock .btn{min-height:46px;padding:0 20px;font-size:12px}
+@media (min-width:640px){
+ .gal{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bap{grid-template-columns:1fr 1fr}
+ .ch-g,.dc-g,.cs-g,.grid-c{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ext{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .svc-l{grid-template-columns:1fr 1fr}
+ .tf-g{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:1000px){
+ .nv{display:flex}
+ .hg{grid-template-columns:1.35fr 1fr}
+ .grid-c{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .herofig{min-height:420px}
+ .two{grid-template-columns:1fr 1fr}
+ .scr{grid-template-columns:1.25fr 1fr;gap:44px}
+ .scr-v{top:calc(50vh - 190px);align-self:start}
+ .st{min-height:66vh}
+ .ba{grid-template-columns:1fr 1fr}
+ .ch-g,.gal{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .dkg{grid-template-columns:.85fr 1.15fr}
+ .med{grid-template-columns:2.3fr 1fr}
+ .ms{grid-template-columns:260px 1fr 1fr}
+ .ctag{grid-template-columns:1fr 1fr}
+ .lk-g{grid-template-columns:1fr 230px 1fr}
+ .foot{grid-template-columns:1fr 1fr}
+ .dock{left:auto;right:22px;bottom:22px;border-radius:12px;padding:9px 12px 9px 18px}
+}
+@media (max-width:640px){.bub{font-size:13px;padding:8px 11px}.q,.a-c{white-space:normal;width:max-content;max-width:88%;text-align:center}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+</style>
+
+</head>
+<body>
+
+<style>
+.tp{background:#ECECE8 url(media/tex-paper.webp) 0 0/720px}
+.td{background:#141414 url(media/tex-dark.webp) 0 0/480px}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-sound" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9.5h4l5.2-4.4c.5-.4 1.3 0 1.3.7v12.4c0 .7-.8 1.1-1.3.7L7 14.5H3c-.6 0-1-.4-1-1v-3c0-.6.4-1 1-1Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.6 8.800a4.600 4.600 0 0 1 0 6.400M19.400 6a8.600 8.600 0 0 1 0 12"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M3 13.400l5.400 6L21 4.600"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M5 5l14 14M19 5L5 19"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.600" stroke-linecap="round" d="M12 4v16M4 12h16"/></symbol>
+<symbol id="i-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M15 4l-8 8 8 8"/></symbol>
+<symbol id="i-r" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M9 4l8 8-8 8"/></symbol>
+<symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.600 4.100 18.500 19c-.2 1-.9 1.300-1.700.8l-4.700-3.500-2.300 2.200c-.3.3-.5.5-1 .5l.3-4.700 8.600-7.800c.4-.3-.1-.5-.6-.2L6.400 13l-4.600-1.400c-1-.3-1-1 .2-1.500l18.100-6.900c.9-.3 1.700.2 1.500.9Z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2.500l2.300 11.200h10.400l2-8H6.500"/><circle cx="9.500" cy="19.500" r="1.600" fill="currentColor"/><circle cx="17" cy="19.500" r="1.600" fill="currentColor"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" d="M12 6c-2.500-2-6-2-9-1v14c3-1 6.500-1 9 1 2.500-2 6-2 9-1V5c-3-1-6.500-1-9 1Zm0 0v14"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" d="M4 20l1-5L16 4l4 4L9 19zM13.500 6.500l4 4"/></symbol>
+<symbol id="dl" viewBox="0 0 120 300"><path d="M60 5c7 0 9 9 3 12l-3 3" fill="none" stroke="#6b6b65" stroke-width="3" stroke-linecap="round"/><path d="M60 20L16 36h88z" fill="none" stroke="#B59A6A" stroke-width="5" stroke-linejoin="round"/><path fill="currentColor" d="M44 34c2 14 30 14 32 0l9 4-7 46c14 66 26 156 32 208-30 9-70 9-100 0 6-52 18-142 32-208l-7-46z"/><path fill="#000" opacity=".16" d="M60 88c-3 70-8 140-14 208 6 1 12 1 18 1-2-70-3-140-4-209zM78 84c10 66 22 150 26 206l-14 4C86 226 80 150 70 88z"/><path fill="#fff" opacity=".13" d="M42 84c-12 66-24 150-28 208l10 3c5-68 12-140 26-210z"/></symbol>
+<symbol id="ds" viewBox="0 0 120 300"><path d="M60 5c7 0 9 9 3 12l-3 3" fill="none" stroke="#6b6b65" stroke-width="3" stroke-linecap="round"/><path d="M60 20L16 36h88z" fill="none" stroke="#B59A6A" stroke-width="5" stroke-linejoin="round"/><path fill="currentColor" d="M44 34c2 14 30 14 32 0l9 4-7 46c10 30 22 74 26 104-28 9-60 9-88 0 4-30 16-74 26-104l-7-46z"/><path fill="#000" opacity=".16" d="M60 88c-2 36-6 72-10 106 6 1 12 1 18 0-3-36-5-72-8-106zM78 84c9 30 20 74 24 102l-12 4c-3-34-11-72-20-102z"/><path fill="#fff" opacity=".13" d="M42 84c-10 32-22 74-26 104l10 3c4-36 14-72 24-104z"/></symbol>
+</svg>
+<header class="top">
+  <a class="logo" href="#top"><span><b>Stellas</b> Deutsch</span></a>
+  <nav class="nv" aria-label="Разделы"><a href="#story">История</a><a href="#core">Какой</a><a href="#forms">Формы</a><a href="#fails">Ошибки</a><a href="#quiz">Тест</a></nav>
+  <a class="btn sm" href="#platform">Платформа 30 €</a>
+  <i id="prog"></i>
+</header>
+<main id="top">
+
+<section class="hero">
+  <div class="pan up">
+    <div class="bg1 tp"></div><div class="bg2 tp"></div>
+    <img class="dec" src="media/d-clips.webp" alt="" style="left:-28px;top:-34px;width:clamp(64px,7vw,100px)">
+    <div class="hg">
+      <div>
+        <h1><span class="ln"><span>Какой?</span></span><span class="ln"><span><i style="white-space:nowrap">По-немецки это</i></span></span><span class="ln"><span>два разных вопроса</span></span></h1>
+        <div class="h-sub"><span class="dots"><i></i><i></i><i></i></span><p><b>Welcher или was für ein?</b> И зачем немцам ещё so ein и solcher. Разбираем за <b class="k">10 минут</b>.</p></div>
+        <a class="btn" href="#story">Разобраться</a>
+      </div>
+      <div class="herofig">
+        <img class="lamp" id="lamp" src="media/d-lamp.webp" alt="">
+        <img class="wm" id="wm" src="media/f-hero.webp" alt="" width="623" height="619" fetchpriority="high">
+        <span class="bub a" id="b1" lang="de">Was für ein?</span>
+        <span class="bub b" id="b2" lang="de">Welcher?</span>
+      </div>
+    </div>
+    <div class="tiles h-tiles">
+      <div class="tile"><b>2<i></i></b><span>вопроса вместо одного «какой»</span></div>
+      <div class="tile"><b>4<i></i></b><span>способа сказать «такой»</span></div>
+      <div class="tile"><b>6<i></i></b><span>вопросов в тесте и разбор</span></div>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="two" id="story">
+  <div class="pan pd">
+    <div class="bg1 td"></div><div class="bg2 td"></div>
+    <img class="dec" src="media/d-olive.webp" alt="" style="right:-8px;top:0;width:clamp(120px,16vw,220px)" loading="lazy">
+    <h2 class="h">Как я купил <i>не то платье</i></h2>
+    <div class="nar"><i></i><p>Живу в Австрии. У сестры день рождения. Сестра хочет платье. Я захожу в магазин. <b style="color:#fff">В магазине меня спрашивают «какой».</b></p></div>
+    <div class="chat" id="chat" lang="de">
+      <div class="bb s">Was für ein Kleid suchen Sie?<small lang="ru">Какое платье ищете?</small></div>
+      <div class="bb m">Das lange.<small lang="ru">То длинное.</small></div>
+      <div class="bb s">Das lange? Hier hängen vierzig.<small lang="ru">То длинное? Их тут сорок.</small></div>
+      <div class="bb s">Welches nehmen Sie?<small lang="ru">Приносит два. Которое берёте?</small></div>
+      <div class="bb m">Ein langes.<small lang="ru">Длинное какое-нибудь.</small></div>
+      <div class="bb s">Beide sind lang.<small lang="ru">Оба длинные.</small></div>
+    </div>
+    <p class="endn">Девушка смотрит на меня. Я смотрю на платья.</p>
+  </div>
+  <div class="pan up">
+    <div class="bg1 tp"></div><div class="bg2 tp"></div>
+    <img class="dec" src="media/d-pen.webp" alt="" style="left:-30px;bottom:6px;width:clamp(140px,18vw,240px)" loading="lazy">
+    <div style="position:relative">
+      <h2 class="h">В чём <i>подвох</i></h2>
+      <p class="lead"><b>Я перепутал всё, что можно.</b> На вопрос про сорт показал конкретное. На вопрос про конкретное ответил сортом.</p>
+      <p class="lead">Показал пальцем. Говорю, <span lang="de">das</span>. Девушка выдохнула. Я потратил <b class="k">год</b>, пока понял, почему. Расскажу, чтобы вы год не теряли.</p>
+      <div class="tiles mt" style="max-width:380px"><div class="tile"><b style="font-size:24px" lang="de">was für ein</b><span>какое вообще</span></div><div class="tile"><b style="font-size:24px" lang="de">welches</b><span>которое из этих</span></div></div>
+      <p class="lead" style="font-style:italic">Сестра, кстати, платье вернула.</p>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat" id="core">
+  <div class="bg2 tp"></div>
+  <div class="in">
+    <h2 class="h">Магазин, <i>четыре платья</i> и один вопрос</h2>
+    <p class="lead">Крути вниз. Смотри, что происходит с платьями.</p>
+    <div class="scr" id="scr">
+      <div class="scr-v">
+        <div class="stage" id="stage">
+          <div class="q" id="sQ" lang="de">Что тут у нас</div>
+          <div class="rack" id="rack">
+            <div class="dr" data-s style="color:#9B2C3A"><svg viewBox="0 0 120 300"><use href="#ds"/></svg></div>
+            <div class="dr" data-l style="color:#2F8F80"><svg viewBox="0 0 120 300"><use href="#dl"/></svg></div>
+            <div class="dr" data-s style="color:#2F8F80"><svg viewBox="0 0 120 300"><use href="#ds"/></svg></div>
+            <div class="dr" data-l data-pick style="color:#9B2C3A"><svg viewBox="0 0 120 300"><use href="#dl"/></svg></div>
+          </div>
+          <img class="pointer" id="sH" src="media/h-point.webp" alt="">
+          <div class="a-c off" id="sA" lang="de"></div>
+        </div>
+      </div>
+      <div class="st-t">
+        <div class="st"><p>Четыре платья. Ничего не выбрано.</p></div>
+        <div class="st"><p>Продавец спрашивает <b>was für ein</b>. Это про сорт. Какое вообще.</p></div>
+        <div class="st"><p>Ответ с <b>ein</b>. Любое длинное. Конкретного платья ещё нет.</p></div>
+        <div class="st"><p>Короткие ушли. На столе два. Теперь <b>welches</b>. Которое из этих.</p></div>
+        <div class="st"><p>Тычешь пальцем. Ответ с <b>das</b>. Вот это красное.</p></div>
+      </div>
+    </div>
+    <p class="apho">Was für ein листает каталог. <i>Welcher тычет пальцем.</i></p>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan up" id="why">
+  <div class="bg1 tp"></div><div class="bg2 tp"></div>
+  <img class="dec" src="media/d-binder.webp" alt="" style="right:20px;top:24px;width:clamp(60px,8vw,110px)" loading="lazy">
+  <div class="in">
+    <h2 class="h">В русском одно слово. <i>В немецком развилка</i></h2>
+    <div class="ruru"><span class="tag">По-русски</span><span>какой</span><span class="tag">По-немецки</span><span lang="de">welcher</span><span>/</span><span lang="de">was für ein</span></div>
+    <div class="fork">
+      <div class="sit" id="fS"></div>
+      <div class="ends">
+        <div class="end" id="fA"><b lang="de">welcher</b><span>можно ткнуть пальцем</span></div>
+        <div class="end" id="fB"><b lang="de">was für ein</b><span>нельзя, выбираем сорт</span></div>
+      </div>
+    </div>
+    <p class="lead" style="margin-inline:auto;text-align:center">Простой тест. Можно ткнуть пальцем? <b>Welcher.</b> Нельзя? <b>Was für ein.</b></p>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan pd" id="forms">
+  <div class="bg1 td"></div><div class="bg2 td"></div>
+  <img class="dec" src="media/d-calc.webp" alt="" style="left:-16px;top:42%;width:clamp(90px,12vw,190px);opacity:.75" loading="lazy">
+  <div class="in">
+    <h2 class="h">Как это <i>склоняется</i></h2>
+    <div class="svcw">
+      <div class="svc-bg"></div>
+      <div class="svc">
+        <div class="svc-h"><h3 class="h3" id="svT" lang="de"></h3><div class="svc-n"><small>Листайте, чтобы увидеть все формы</small><button class="ar off" id="svP" aria-label="Назад"><svg><use href="#i-l"/></svg></button><button class="ar" id="svN" aria-label="Дальше"><svg><use href="#i-r"/></svg></button></div></div>
+        <div class="svc-l" id="svL"></div>
+        <p class="svc-p" id="svB"></p>
+      </div>
+    </div>
+    <h3 class="h3 mt" style="text-align:center;color:#fff">Падежи цветом</h3>
+    <div class="sw mt-s" id="cQ"></div>
+    <div class="sw mt-s" id="cG"></div>
+    <div class="grid-c" id="cW" lang="de"></div>
+    <div class="trap" id="trap">
+      <div class="tr-w" lang="de"><span class="blk">In</span><span class="blk fu">was für<span class="nope" lang="ru">Akkusativ? Нет</span></span><span class="blk dat">einem</span><span class="blk">Haus</span><span class="blk">wohnst du?</span></div>
+      <p>Für тут не предлог. Падеж командует тот, кто снаружи: предлог <span lang="de">in</span> и глагол.</p>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat" id="so">
+  <div class="bg2 tp"></div>
+  <img class="dec" src="media/d-keyboard.webp" alt="" style="right:-34px;top:60px;width:clamp(120px,15vw,250px);opacity:.92" loading="lazy">
+  <div class="in">
+    <h2 class="h" style="max-width:15em">Четыре способа <i>сказать «такой»</i></h2>
+    <p class="lead">Окончание одно на всю компанию. Кто его взял, тот и работает.</p>
+    <div class="dc-g" style="max-width:760px">
+      <article class="dc"><h3 lang="de">so ein</h3><p class="sub">Каждый день</p><button class="say" data-say="Nach so einem Urlaub" aria-label="Слушать"><svg><use href="#i-sound"/></svg></button><div class="who" lang="de"><span>nach</span><span>so</span><span class="wrk">einem</span><span>Urlaub</span></div><ul><li><span><span lang="de">so</span> отдыхает, <span lang="de">ein</span> пашет.</span></li><li><span>Множественного нет. Там <span lang="de">solche</span>.</span></li></ul></article>
+      <article class="dc"><h3 lang="de">solch ein</h3><p class="sub">В пиджаке</p><button class="say" data-say="Nach solch einem Urlaub" aria-label="Слушать"><svg><use href="#i-sound"/></svg></button><div class="who" lang="de"><span>nach</span><span>solch</span><span class="wrk">einem</span><span>Urlaub</span></div><ul><li><span>То же самое. Только в книге и в письме.</span></li><li><span><span lang="de">solch</span> без окончания.</span></li></ul></article>
+      <article class="dc"><h3 lang="de">ein solcher</h3><p class="sub">Оба на смене</p><button class="say" data-say="Nach einem solchen Urlaub" aria-label="Слушать"><svg><use href="#i-sound"/></svg></button><div class="who" lang="de"><span>nach</span><span class="wrk">einem</span><span class="wrk">solchen</span><span>Urlaub</span></div><ul><li><span><span lang="de">solch</span> встаёт как прилагательное.</span></li><li><span>После <span lang="de">ein</span> берёт <span lang="de">-en</span> в Dativ.</span></li></ul></article>
+      <article class="dc"><h3 lang="de">solcher</h3><p class="sub">Один за всех</p><button class="say" data-say="Nach solchem Urlaub" aria-label="Слушать"><svg><use href="#i-sound"/></svg></button><div class="who" lang="de"><span>nach</span><span class="wrk">solchem</span><span>Urlaub</span></div><ul><li><span>Артикля нет. Окончания как у <span lang="de">der</span>.</span></li><li><span>С прилагательным: <span lang="de">bei solch schönem Wetter</span>. Работает <span lang="de">schönem</span>.</span></li></ul></article>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan pd" id="fails">
+  <div class="bg1 td"></div><div class="bg2 td"></div>
+  <img class="dec" src="media/d-binder.webp" alt="" style="right:8px;top:40px;width:clamp(50px,7vw,100px)" loading="lazy">
+  <div class="in">
+    <h2 class="h" style="text-align:center">Где ошибаются <i>русскоязычные</i></h2>
+    <p class="lead" style="margin-inline:auto;text-align:center"><b>Шесть мин на одном поле.</b> Обходим.</p>
+    <div class="ba" lang="de">
+      <div class="bap"><div class="bc bf"><s>In was für ein Haus wohnst du?</s><small lang="ru">Für не командует.</small><em lang="ru">До</em></div><div class="bc af">In was für einem Haus wohnst du?<small lang="ru">In + где, значит Dativ.</small><em lang="ru">После</em></div></div>
+      <div class="bap"><div class="bc bf"><s>Was für einen Mantel ist das?</s><small lang="ru">Подлежащее, а не объект.</small><em lang="ru">До</em></div><div class="bc af">Was für ein Mantel ist das?<small lang="ru">После sein всё в Nominativ.</small><em lang="ru">После</em></div></div>
+      <div class="bap"><div class="bc bf"><s>Was für eine Schuhe?</s><small lang="ru">Туфель много, ein нет.</small><em lang="ru">До</em></div><div class="bc af">Was für Schuhe?<small lang="ru">Во множественном ein уходит.</small><em lang="ru">После</em></div></div>
+      <div class="bap"><div class="bc bf"><s>Welches nimmst du? Ein rotes.</s><small lang="ru">Выбрали из конкретных.</small><em lang="ru">До</em></div><div class="bc af">Welches nimmst du? Das rote.<small lang="ru">Welcher ждёт der, die, das.</small><em lang="ru">После</em></div></div>
+      <div class="bap"><div class="bc bf"><s>So eine Schuhe</s><small lang="ru">Опять множественное.</small><em lang="ru">До</em></div><div class="bc af">Solche Schuhe<small lang="ru">So ein меняется на solche.</small><em lang="ru">После</em></div></div>
+      <div class="bap"><div class="bc bf"><s>nach solchem einem Urlaub</s><small lang="ru">Работают двое. Перебор.</small><em lang="ru">До</em></div><div class="bc af">nach solch einem Urlaub<small lang="ru">Solch отдыхает.</small><em lang="ru">После</em></div></div>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan up" id="exc">
+  <div class="bg1 tp"></div><div class="bg2 tp"></div>
+  <img class="dec" src="media/d-clips.webp" alt="" style="right:40px;top:12px;width:clamp(70px,9vw,120px)" loading="lazy">
+  <img class="dec" src="media/d-olive2.webp" alt="" style="left:-22px;bottom:30px;width:clamp(120px,15vw,210px)" loading="lazy">
+  <div class="in">
+    <div class="cs-h"><h2 class="h">Кейсы</h2><div class="svc-n"><small>Листайте, чтобы увидеть все случаи</small><button class="ar off" id="csP" aria-label="Назад"><svg><use href="#i-l"/></svg></button><button class="ar" id="csN" aria-label="Дальше"><svg><use href="#i-r"/></svg></button></div></div>
+    <div class="cs-g" id="csG"></div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat" id="quiz">
+  <div class="bg2 tp"></div>
+  <div class="in pl-w">
+    <h2 class="h" style="text-align:center">Шесть вопросов</h2>
+    <div class="qz" id="qz"></div>
+    <h2 class="h mt" id="drill" style="text-align:center">Теперь <i>твоя очередь</i></h2>
+    <p class="lead" style="margin-inline:auto;text-align:center">Выбери окончание. Потом проверь всё сразу.</p>
+    <div class="exr" id="exr" lang="de"></div>
+    <div class="center mt-s"><button class="btn" id="xC">Проверить</button></div>
+    <p class="sc" id="xS" hidden></p>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan up" id="end">
+  <div class="bg1 tp"></div><div class="bg2 tp"></div>
+  <div class="in">
+    <h2 class="h" style="text-align:center">Итог. <i>Шесть строк</i></h2>
+    <div class="ch-g">
+      <div class="ch"><b>Сорт?</b><span><span lang="de">Was für ein.</span> Ответ с <span lang="de">ein</span>.</span></div>
+      <div class="ch"><b>Палец?</b><span><span lang="de">Welcher.</span> Ответ с <span lang="de">der, die, das</span>.</span></div>
+      <div class="ch"><b>Für молчит</b><span>Падеж решает глагол или внешний предлог.</span></div>
+      <div class="ch"><b>Много</b><span><span lang="de">Was für Schuhe. Solche Schuhe.</span> Без <span lang="de">ein</span>.</span></div>
+      <div class="ch"><b>Так разговаривают</b><span><span lang="de">So ein.</span> В книге <span lang="de">solch ein, ein solcher</span>.</span></div>
+      <div class="ch"><b>Один пашет</b><span>Окончание одно. Второй отдыхает.</span></div>
+    </div>
+    <div class="endl mt"><p class="apho">Немецкий не сложный. <i>Он просто спрашивает точнее.</i></p><p>Сестре я потом купил шарф. Шарф не вернули. Но спросили, какой.</p></div>
+  </div>
+</section>
+<div class="gap"></div>
+
+
+<section class="pan pd" id="platform">
+  <div class="bg1 td"></div><div class="bg2 td"></div>
+  <div class="dkg">
+    <div class="dkfig"><img src="media/f-dark.webp" alt="" loading="lazy" width="637" height="720"><div class="bad-g"><b>30 €</b><span>один раз</span></div></div>
+    <div>
+      <h2 class="h">На эту тему ушло <i>10 минут.</i> Таких 340+</h2>
+      <div class="pain">
+        <h3 class="h3">Берёшь то, что принесли</h3>
+        <p>Немецкая жизнь это один большой вопрос «какой». Какой размер. Какой тариф. Какая стрижка. Не можешь объяснить, какой хочешь, и вот у тебя тариф, который предложили. И стрижка, которую сделали.</p>
+      </div>
+      <ul class="bul">
+        <li><span><b>340+ гайдов A0–C1.</b> Объяснение, видео, упражнение, ответы с разбором.</span></li>
+        <li><span><b>7500+ слов</b> с озвучкой и транскрипцией.</span></li>
+        <li><span><b>Фильмы, книги, подкасты</b> по уровням. Умный трекер и карточки.</span></li>
+        <li><span><b>Офлайн.</b> Notion на телефоне и ноутбуке. Пока ребёнок на кружке.</span></li>
+      </ul>
+      <div class="dst"><div><b class="count" data-to="340" data-suf="+">340+</b><span>гайдов</span></div><div><b class="count" data-to="7500" data-suf="+">7500+</b><span>слов с аудио</span></div><div><b>&lt; 9 ц</b><span>за гайд в A0–C1</span></div></div>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat">
+  <div class="bg2 tp"></div>
+  <img class="dec" src="media/d-mouse.webp" alt="" style="right:40px;top:-14px;width:clamp(70px,9vw,130px)" loading="lazy">
+  <div class="in">
+    <h2 class="h" style="max-width:15em">Что <i>внутри</i></h2>
+    <div class="dc-g" style="margin-bottom:6px">
+      <article class="dc"><h3>«Вся грамматика»</h3><p class="sub">Темы по порядку</p><ul><li><span><b>Объяснение и видео</b> в каждом гайде</span></li><li><span><b>Упражнение</b> и разбор ответов</span></li></ul><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Узнать подробнее</a></article>
+      <article class="dc"><h3>«Слова»</h3><p class="sub">Со звуком и по ситуациям</p><ul><li><span><b>7500+ слов</b>: аудио и транскрипция</span></li><li><span><b>Карточки</b> и повторение в Notion</span></li></ul><a class="btn gr" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Узнать подробнее</a></article>
+      <article class="dc"><h3>«Жизнь в Германии»</h3><p class="sub">Работа, выбор, что учить первым</p><ul><li><span><b>Поиск работы</b> в Германии</span></li><li><span><b>Что учить сначала</b>, чтобы не распыляться</span></li></ul><a class="btn gr" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Узнать подробнее</a></article>
+      <article class="dc"><h3>«Диалоги B1–C1»</h3><p class="sub">Интерактивные гайды</p><ul><li><span><b>20+ слов, 15 фраз</b> с озвучкой</span></li><li><span><b>3 диалога</b> и ИИ-партнёр в роли</span></li></ul><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Узнать подробнее</a></article>
+    </div>
+    <h3 class="h3 mt">Вот как это выглядит в Notion</h3>
+    <div class="gal">
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-pronouns.webp" alt="Раздел про местоимения" width="1400" height="916"><figcaption>Местоимения: тема рядом с нашей</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-home.webp" alt="Главная A0–A2" width="1400" height="902"><figcaption>Главная A0–A2</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-newlex.webp" alt="Лексика по ситуациям" width="1400" height="916"><figcaption>Лексика по ситуациям</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-srs.webp" alt="Повторение слов" width="1400" height="902"><figcaption>Интервальное повторение</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-b1-home.webp" alt="Главная B1–C1" width="1400" height="916"><figcaption>Главная B1–C1</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-work.webp" alt="Раздел про работу" width="1400" height="916"><figcaption>Работа: звонок, резюме, собеседование</figcaption></figure>
+    </div>
+    <div class="med">
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><video data-v muted loop playsinline preload="none" data-poster="media/v-notion.jpg" data-src="media/v-notion.mp4" width="1000" height="625"></video><figcaption>Список гайдов. Там есть и «Welcher или was für ein?»</figcaption></figure>
+      <div><div class="pf"><video data-v muted loop playsinline preload="none" data-poster="media/v-guide.jpg" data-src="media/v-guide.mp4" width="400" height="866"></video></div><p class="cap">Гайд про местоимения</p></div>
+    </div>
+    <div class="rev"><img loading="lazy" src="media/rv-vse-v-odnom-meste.webp" alt="Отзыв о платформе: всё в одном месте"></div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan pd" id="tariffs">
+  <div class="bg1 td"></div><div class="bg2 td"></div>
+  <img class="dec" src="media/d-olive2.webp" alt="" style="right:-6px;top:2px;width:clamp(120px,15vw,220px)" loading="lazy">
+  <div class="in" style="max-width:1000px">
+    <h2 class="h">Тарифы</h2>
+    <p class="lead">Цену планируем поднять после новых обновлений. У кого доступ уже есть, получат их бесплатно.</p>
+    <div class="tf-g">
+      <article class="tf"><h3>A0–A2</h3><p class="s">Начать с нуля</p><ul><li><svg><use href="#i-check"/></svg>Гайды A0–A2</li><li><svg><use href="#i-check"/></svg>Слова, фильмы, книги</li><li><svg><use href="#i-check"/></svg>Экзамены</li><li class="x"><svg><use href="#i-x"/></svg>B1–C1</li></ul><p class="pr">20 €</p><p class="wa">&nbsp;</p><a class="btn gr" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Купить тариф</a></article>
+      <article class="tf"><h3>B1–C1</h3><p class="s">Выйти на уверенный уровень</p><ul><li><svg><use href="#i-check"/></svg>Гайды B1–C1</li><li><svg><use href="#i-check"/></svg>ИИ-партнёр и диалоги</li><li><svg><use href="#i-check"/></svg>Экзамены</li><li class="x"><svg><use href="#i-x"/></svg>A0–A2</li></ul><p class="pr">20 €</p><p class="wa">&nbsp;</p><a class="btn gr" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Купить тариф</a></article>
+      <article class="tf best"><span class="rib">Выгоднее на 10 €</span><h3>A0–C1</h3><p class="s">Весь путь одним платежом</p><ul><li><svg><use href="#i-check"/></svg><span>Все <b class="k">340+</b> гайдов</span></li><li><svg><use href="#i-check"/></svg>Слова, диалоги, экзамены</li><li><svg><use href="#i-check"/></svg>Навсегда, с обновлениями</li><li><svg><use href="#i-check"/></svg>Бонус: A0–A2 на украинском</li></ul><p class="pr">30 €</p><p class="wa">вместо 40 €</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Купить тариф</a></article>
+    </div>
+    <div class="mt">
+      <details class="ac"><summary>Это подписка?<svg><use href="#i-plus"/></svg></summary><div class="bd">Нет. Один платёж, доступ навсегда.</div></details>
+      <details class="ac"><summary>Какой тариф брать?<svg><use href="#i-plus"/></svg></summary><div class="bd">Если цель выше A2, бери A0–C1. Вместе дешевле на 10 €.</div></details>
+      <details class="ac"><summary>Кто это делает?<svg><use href="#i-plus"/></svg></summary><div class="bd">Канал Stellas. Больше <b class="k">100</b> учеников прошли наши разговорные клубы.</div></details>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan up" id="exam">
+  <div class="bg1 tp"></div><div class="bg2 tp"></div>
+  <img class="dec" src="media/d-pen.webp" alt="" style="left:-30px;top:20px;width:clamp(140px,18vw,250px)" loading="lazy">
+  <div class="in">
+    <h2 class="h" style="text-align:center">Welche Prüfung? <i>Was für eine Prüfung?</i></h2>
+    <p class="lead" style="margin-inline:auto;text-align:center"><b>Goethe, telc, DTZ или ÖSD.</b> Не знаешь, какой экзамен нужен? Подготовка уже внутри платформы, и начинается она с этого вопроса.</p>
+    <div class="ext">
+      <article class="et"><h3>Goethe</h3><b class="count" data-to="120">120</b><span>гайдов</span></article>
+      <article class="et"><h3>telc и DTZ</h3><b class="count" data-to="89">89</b><span>гайдов</span></article>
+      <article class="et"><h3>ÖSD</h3><b class="count" data-to="60">60</b><span>гайдов</span></article>
+    </div>
+    <div class="mods" lang="de"><div class="md">Lesen</div><div class="md">Hören</div><div class="md">Schreiben</div><div class="md">Sprechen</div><div class="md">Sprachbausteine</div></div>
+    <p class="note">Всего <b class="k">269</b> гайдов, A1–C2. <b class="k">40</b> пробников. Тренажёры в <b class="k">54</b> гайдах, квизы в <b class="k">162</b>.</p>
+    <p class="note">Наша тема тоже там. В тренировке Goethe A1 Hören, Teil 1, задание 2, звучит <span lang="de">Was für eine Suppe gibt es heute?</span></p>
+    <div class="ms">
+      <div class="pf"><video data-v muted loop playsinline preload="none" data-poster="media/v-exam.jpg" data-src="media/v-exam.mp4" width="500" height="888"></video></div>
+      <div class="mc"><h3>Квиз</h3><div id="mqL"></div></div>
+      <div class="mc"><h3>Мои ошибки<span class="cnt" id="mqN">0</span></h3><div id="mqR"></div><p class="mt-s" style="font-size:13.5px;color:var(--ink2)">Неверные ответы собираются сами. Перед экзаменом повторяешь только их.</p></div>
+    </div>
+    <h3 class="h3 mt">Вот как это выглядит в Notion</h3>
+    <div class="gal">
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-exams.webp" alt="Экзамены в Notion" width="1400" height="916"><figcaption>Экзамены по уровням</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-b1-grammar.webp" alt="Грамматика B1" width="1400" height="916"><figcaption>Грамматика к экзамену</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-b1-c1.webp" alt="Уровень C1" width="1400" height="916"><figcaption>Материалы C1</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-a0-progress.webp" alt="Прогресс" width="1400" height="916"><figcaption>Прогресс по темам</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-b1-progress.webp" alt="Прогресс B1" width="1400" height="916"><figcaption>Отметки B1–C1</figcaption></figure>
+      <figure class="bf"><div class="br"><i></i><i></i><i></i></div><img loading="lazy" src="media/n-b1-srs.webp" alt="Повторение B1" width="1400" height="916"><figcaption>Повторение B1–C1</figcaption></figure>
+    </div>
+    <div class="rev"><img loading="lazy" src="media/rv-s-nulya-dlya-postupleniya.webp" alt="Отзыв: с нуля для поступления"></div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat">
+  <div class="bg2 tp"></div>
+  <img class="dec" src="media/d-clips.webp" alt="" style="left:6px;top:14px;width:clamp(70px,9vw,120px)" loading="lazy">
+  <div class="in ctag" style="max-width:1000px">
+    <div><h2 class="h">Есть вопрос <i>какой тариф?</i></h2><p class="lead"><b>Бери весь путь.</b> Один платёж. Обновления бесплатно.</p>
+      <div class="ctab mt-s"><div class="lst"><div><svg><use href="#i-check"/></svg>340+ гайдов от A0 до C1</div><div><svg><use href="#i-check"/></svg>Goethe, telc, DTZ, ÖSD</div><div><svg><use href="#i-check"/></svg>Работает без интернета</div></div><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Забрать за 30 €</a><small>Оплата на странице платформы</small></div></div>
+    <div class="lay"><img class="wood" src="media/d-wood.webp" alt="" loading="lazy"><img class="env" src="media/d-envelope.webp" alt="" loading="lazy"><img class="ol" src="media/d-olive2.webp" alt="" loading="lazy"><div class="card"><b>Весь немецкий</b><span>A0–C1, один платёж</span><div class="cubes" aria-label="30 евро"><i>3</i><i>0</i><i>€</i></div></div></div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan flat">
+  <div class="bg2 tp"></div>
+  <div class="in"><h2 class="h" style="text-align:center">Ссылки <i>на всё нужное</i></h2>
+    <div class="lk-g mt">
+      <div style="display:grid;gap:12px"><a class="lk gd" href="https://app.lava.top/801303618?tabId=products&amp;sort=published"><svg><use href="#i-cart"/></svg>Купить платформу</a><a class="lk tg" href="https://t.me/stellasdeutsch"><svg><use href="#i-tg"/></svg>Написать в Telegram</a></div>
+      <div class="phw"><div class="phm"><div class="tp">Stellas<i></i><i></i></div><img src="media/ph-home.webp" alt="Экран платформы" loading="lazy"></div></div>
+      <div style="display:grid;gap:12px"><a class="lk ex" href="#exam"><svg><use href="#i-book"/></svg>Посмотреть экзамены</a><a class="lk pr" href="#quiz"><svg><use href="#i-pen"/></svg>Пройти тест ещё раз</a></div>
+    </div>
+  </div>
+</section>
+<div class="gap"></div>
+
+<section class="pan pd">
+  <div class="bg1 td"></div><div class="bg2 td"></div>
+  <div class="in foot"><div><b><span>Stellas</span> Deutsch</b></div><div>Вопросы: <a href="https://t.me/stellasdeutsch">@stellasdeutsch</a></div></div>
+</section>
+<div class="gap"></div>
+<div class="dock" id="dock"><p><b>30 €</b>один раз, A0–C1</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&amp;sort=published">Купить</a></div>
+
+</main>
+<script>
+function xInit(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
+  if(G){ try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); }catch(e){ G=null; } }
+  if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
+  var anim = G && !reduce, ST = G && window.SplitText;
+  function $(s,r){ return (r||document).querySelector(s); }
+  function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+  function nb(t){ return String(t).replace(/(^|[\s(])([вкоусаиВКОУСАИяЯ])\s/g,'$1$2 '); }
+  var SP='<svg><use href="#i-sound"/></svg>';
+  function sb(t){ return '<button class="say" data-say="'+t.replace(/"/g,'&quot;')+'" aria-label="Слушать">'+SP+'</button>'; }
+  var tts='speechSynthesis' in window, deV=null;
+  if(!tts) document.documentElement.classList.add('no-tts');
+  function pv(){ try{ deV=speechSynthesis.getVoices().find(function(x){return /^de/i.test(x.lang)})||null; }catch(e){} }
+  if(tts){ pv(); try{ speechSynthesis.onvoiceschanged=pv; }catch(e){} }
+  function say(t,b){ if(!tts||!t) return; try{ speechSynthesis.cancel(); var u=new SpeechSynthesisUtterance(t); u.lang='de-DE'; u.rate=.88; if(deV)u.voice=deV; if(b){b.classList.add('on'); u.onend=u.onerror=function(){b.classList.remove('on');};} speechSynthesis.speak(u);}catch(e){} }
+  document.addEventListener('click',function(e){ var b=e.target.closest('[data-say]'); if(b) say(b.dataset.say,b.classList.contains('say')?b:null); });
+  function vis(el,on,off,th){ if(!el) return; if(!('IntersectionObserver' in window)){on();return;} new IntersectionObserver(function(es){es.forEach(function(x){x.isIntersecting?on():(off&&off());});},{threshold:th||.2}).observe(el); }
+
+  /* hero bubbles swap */
+  (function(){ var a=$('#b1'),b=$('#b2'); if(!anim) return; var tl=G.timeline({repeat:-1,repeatDelay:.3,paused:true}); tl.fromTo(a,{scale:.5,rotation:-8},{scale:1,rotation:0,duration:.6,ease:'back.out(3)'}).to(a,{y:-6,duration:1.1,ease:'sine.inOut',yoyo:true,repeat:1}).fromTo(b,{scale:.5,rotation:8},{scale:1,rotation:0,duration:.6,ease:'back.out(3)'},'-=1.5').to(b,{y:6,duration:1.1,ease:'sine.inOut',yoyo:true,repeat:1},'-=.9'); vis($('.hero'),function(){tl.play();},function(){tl.pause();},.05); G.to('#wm',{y:30,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}}); G.fromTo('#lamp',{rotation:-1.4},{rotation:1.4,duration:2.6,ease:'sine.inOut',yoyo:true,repeat:-1}); })();
+
+  /* chat: messages arrive one by one */
+  (function(){ var B=$$('#chat .bb'); if(!G){return;} if(reduce){B.forEach(function(b){b.classList.add('in');});return;} var st=false; ScrollTrigger.create({trigger:'#chat',start:'top 72%',once:true,onEnter:function(){ if(st)return; st=true; B.forEach(function(b,i){ setTimeout(function(){b.classList.add('in');},i*820); }); }}); })();
+
+  /* store scene */
+  (function(){ var sc=$('#scr'),Q=$('#sQ'),A=$('#sA'),H=$('#sH'),D=$$('#rack .dr'),S=$$('.st',sc),cur=-1;
+    function set(n){ if(n===cur)return; cur=n; S.forEach(function(s,i){s.classList.toggle('on',i===n);});
+      var qs=['Что тут у нас','Was für ein Kleid?','Was für ein Kleid?','Welches Kleid?','Welches Kleid?']; Q.textContent=qs[n]; Q.classList.toggle('w',n>=3);
+      A.textContent=n===2?'Ein langes.':n===4?'Das rote.':''; A.classList.toggle('off',!(n===2||n===4));
+      D.forEach(function(d){ var sh=d.hasAttribute('data-s'); d.classList.toggle('dim',sh&&n===2); d.classList.toggle('gone',sh&&n>=3); d.classList.toggle('pick',d.hasAttribute('data-pick')&&n===4); d.style.opacity=(!sh&&!d.hasAttribute('data-pick')&&n===4)?'.35':''; });
+      H.classList.toggle('on',n===4);
+    }
+    if(reduce){ sc.classList.add('static'); set(4); return; }
+    set(0);
+    if(G){ S.forEach(function(s,i){ ScrollTrigger.create({trigger:s,start:'top 62%',end:'bottom 62%',onEnter:function(){set(i);},onEnterBack:function(){set(i);}}); }); }
+    else if('IntersectionObserver' in window){ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)set(S.indexOf(e.target));});},{rootMargin:'-45% 0px -45% 0px'}); S.forEach(function(s){io.observe(s);}); }
+    else { sc.classList.add('static'); set(4); }
+  })();
+
+  /* fork */
+  (function(){ var D=[['На столе две сумки. Какую берёшь?','a'],['Звонишь в салон. Спрашивают, какую стрижку хочешь.','b'],['В меню три супа. Какой заказываешь?','a'],['Подруга купила собаку. Спрашиваешь, какую.','b'],['Вот эти туфли или те?','a'],['Какой тариф тебе вообще нужен?','b']],i=0,t=null,S=$('#fS'),A=$('#fA'),B=$('#fB');
+    function dr(){ var d=D[i%D.length]; i++; S.textContent=nb(d[0]); A.classList.remove('hit'); B.classList.remove('hit'); if(anim) G.fromTo(S,{y:14},{y:0,duration:.4,ease:'back.out(2)'}); setTimeout(function(){ (d[1]==='a'?A:B).classList.add('hit'); },650); }
+    dr(); if(!reduce) vis(A,function(){ if(!t)t=setInterval(dr,2700); },function(){clearInterval(t);t=null;},.3);
+  })();
+
+  /* services-style card with forms */
+  (function(){ var F=[
+    {t:'welcher',b:'Работает как der. Ответ с der, die, das.',l:[['welcher Mantel','Nominativ'],['welchen Mantel','Akkusativ'],['mit welchem Mantel','Dativ'],['welches Kleid','средний род'],['welche Tasche','женский род'],['welche Schuhe','множественное']]},
+    {t:'was für ein',b:'Was für застыл. Считает только ein.',l:[['Was für ein Mantel?','Nominativ'],['Was für einen Mantel?','Akkusativ'],['In was für einem Haus?','Dativ'],['Was für eine Tasche?','женский род'],['Was für Schuhe?','много, ein ушёл'],['Was für Wein?','нельзя посчитать']]},
+    {t:'Без существительного',b:'Слово уже прозвучало. Его можно не повторять.',l:[['Was für einer?','мужской'],['Was für eine?','женский'],['Was für eins?','средний'],['Was für welche?','много'],['Welcher? Welche? Welches?','как обычно'],['Ich kaufe Schuhe. Was für welche?','покупаю туфли. Какие?']]},
+    {t:'Восклицание',b:'Какой день! И никакого вопроса.',l:[['Was für ein Tag!','самое живое'],['Welch ein Tag!','книжно'],['Welch schöner Tag!','welch без окончания'],['So ein Tag!','разговорно'],['Solch ein Tag!','торжественно'],['Was für Leute!','много, ein ушёл']]}
+  ],i=0;
+    function dr(pop){ var f=F[i]; $('#svT').textContent=f.t; $('#svT').lang=i===2||i===3?'ru':'de'; $('#svL').innerHTML=f.l.map(function(x){return '<div class="it"><i></i><span><span lang="de">'+x[0]+'</span> <span style="color:var(--ink2);font-size:13.5px">'+nb(x[1])+'</span></span>'+sb(x[0])+'</div>';}).join(''); $('#svB').textContent=nb(f.b); $('#svP').classList.toggle('off',i===0); $('#svN').classList.toggle('off',i===F.length-1); if(pop&&anim) G.from('#svL .it',{x:26,duration:.45,ease:'power3.out',stagger:.04}); }
+    $('#svP').onclick=function(){ if(i>0){i--;dr(1);} }; $('#svN').onclick=function(){ if(i<F.length-1){i++;dr(1);} }; dr(0);
+  })();
+
+  /* case grid */
+  (function(){ var Q=['welcher','was für ein'],Gn=[['m','Mantel'],['f','Tasche'],['n','Kleid'],['p','Schuhe']],q=0,g=0,C=[['Nom','nom'],['Akk','akk'],['Dat','dat']];
+    var W={m:['welcher','welchen','welchem'],f:['welche','welche','welcher'],n:['welches','welches','welchem'],p:['welche','welche','welchen']},E={m:['ein','einen','einem'],f:['eine','eine','einer'],n:['ein','ein','einem'],p:['','','']},N={m:'Mantel',f:'Tasche',n:'Kleid',p:'Schuhe'},D={p:'Schuhen'};
+    $('#cQ').innerHTML=Q.map(function(x,i){return '<button class="op" data-i="'+i+'" lang="de">'+x+'</button>';}).join('');
+    $('#cG').innerHTML=Gn.map(function(x,i){return '<button class="op" data-i="'+i+'" lang="de">'+x[1]+'</button>';}).join('');
+    function bold(w,stem){ return stem+'<mark>'+w.slice(stem.length)+'</mark>'; }
+    function dr(pop){ var k=Gn[g][0],h=C.map(function(c,j){ var n=(j===2&&D[k])?D[k]:N[k],ph,txt; if(q===0){ txt=W[k][j]+' '+n; ph=bold(W[k][j],'welch')+' '+n; } else { var e=E[k][j]; txt='was für '+(e?e+' ':'')+n; ph='was für '+(e?(e.length>2?bold(e,'ein'):e)+' ':'')+n; } return '<div class="cc"><span class="cs '+c[1]+'">'+c[0]+'</span><span>'+ph+'</span>'+sb(txt)+'</div>'; }).join(''); $('#cW').innerHTML=h; $$('#cQ .op').forEach(function(x,i){x.classList.toggle('on',i===q);}); $$('#cG .op').forEach(function(x,i){x.classList.toggle('on',i===g);}); if(pop&&anim) G.from('#cW mark',{scale:.3,duration:.5,ease:'back.out(3)',stagger:.05}); }
+    $('#cQ').onclick=function(e){var b=e.target.closest('.op'); if(b){q=+b.dataset.i;dr(1);}}; $('#cG').onclick=function(e){var b=e.target.closest('.op'); if(b){g=+b.dataset.i;dr(1);}}; dr(0);
+    var T=$('#trap'); if(reduce){T.classList.add('go');} else vis(T,function(){ setTimeout(function(){T.classList.add('go');},500); },null,.5);
+  })();
+
+  /* case cards */
+  (function(){ var D=[
+    {i:'media/o-book.webp',t:'Разъехались',d:'Was hast du denn für ein Kleid an!',ru:'Что это на тебе за платье!',w:'Что случилось?',x:'В разговоре <b>was</b> и <b>für</b> могут разойтись. Смысл тот же.',r:'Результат: услышал was в начале, жди für в середине.'},
+    {i:'media/o-note.webp',t:'Welches перед sein',d:'Welches ist dein Lieblingsfilm?',ru:'Какой твой любимый фильм?',w:'Что случилось?',x:'Слово отделено глаголом sein. Тогда часто берут средний род, даже если фильм der. С женским и множественным можно и <b>welche</b>.',r:'Результат: welches ждёт после себя sein.'},
+    {i:'media/o-cup.webp',t:'Welch без окончания',d:'Welch schöner Tag!',ru:'Какой прекрасный день!',w:'Что случилось?',x:'В восклицании <b>welch</b> сбрасывает окончание. Работу берёт прилагательное.',r:'Результат: один отдыхает, второй пашет.'},
+    {i:'media/o-books.webp',t:'Was für welche',d:'Ich kaufe Schuhe. Was für welche?',ru:'Покупаю туфли. Какие?',w:'Что случилось?',x:'Существительное прозвучало, и его опустили. Во множественном вместо <b>ein</b> приходит <b>welche</b>.',r:'Результат: was für welche значит какие именно по сорту.'}
+  ],i=0,R=$('#csG');
+    function card(c){ return '<article class="cse"><div class="cse-t"><img src="'+c.i+'" alt="" loading="lazy"><div><h3>'+c.t+'</h3><p class="de" lang="de">'+c.d+'</p></div>'+sb(c.d)+'</div><p>'+nb(c.ru)+'</p><p class="ttl">'+c.w+'</p><p>'+nb(c.x)+'</p><div class="sp"></div><div class="res"><b>'+nb(c.r.split(':')[0])+':</b>'+nb(c.r.split(':').slice(1).join(':'))+'</div></article>'; }
+    function dr(pop){ R.innerHTML=card(D[i])+card(D[(i+1)%D.length]); $('#csP').classList.toggle('off',i===0); $('#csN').classList.toggle('off',i===D.length-2); if(pop&&anim) G.from($$('.cse',R),{x:30,duration:.5,ease:'power3.out',stagger:.08}); }
+    $('#csP').onclick=function(){ if(i>0){i--;dr(1);} }; $('#csN').onclick=function(){ if(i<D.length-2){i++;dr(1);} }; dr(0);
+  })();
+
+  /* quiz */
+  (function(){ var Q=[
+    {q:'В магазине ничего не выбрано. Как спросить, какое платье нужно?',o:['Was für ein Kleid brauchen Sie?','Welches Kleid brauchen Sie?'],k:0,w:'Ткнуть пальцем пока не во что. Значит, сорт.',s:'Was für ein Kleid brauchen Sie?'},
+    {q:'На столе две сумки. ___ nehmen Sie?',o:['Was für eine','Welche'],k:1,w:'Можно ткнуть пальцем. Welche.',s:'Welche nehmen Sie?'},
+    {q:'In was für ___ Stadt wohnst du?',o:['eine','einer','einen'],k:1,w:'Für молчит. In и «где» дают Dativ.',s:'In was für einer Stadt wohnst du?'},
+    {q:'Was für ___ Schuhe suchst du?',o:['eine','einen','ничего'],k:2,w:'Туфель много. Ein уходит.',s:'Was für Schuhe suchst du?'},
+    {q:'Welchen Mantel nimmst du?',o:['Einen langen.','Den langen.'],k:1,w:'Welcher ждёт ответ с определённым артиклем.',s:'Den langen.'},
+    {q:'Nach ___ Urlaub bin ich müde.',o:['so einem','so einen','solchem einem'],k:0,w:'Nach требует Dativ. So отдыхает, einem работает.',s:'Nach so einem Urlaub bin ich müde.'}
+  ],i=0,sc=0,R=$('#qz');
+    function dr(){ var c=Q[i]; R.innerHTML='<p class="qz-p">Вопрос '+(i+1)+' из '+Q.length+'</p><h3 class="qz-q">'+nb(c.q)+'</h3><div class="qz-o">'+c.o.map(function(x,j){return '<button class="qo" data-j="'+j+'" lang="de">'+x+'</button>';}).join('')+'</div><div class="qz-w" hidden></div><div class="qz-n" hidden></div>'; if(anim) G.from($$('.qo',R),{y:18,duration:.4,ease:'back.out(2)',stagger:.06}); }
+    function pick(j){ var c=Q[i]; $$('.qo',R).forEach(function(b,x){b.disabled=true; if(x===c.k)b.classList.add('ok'); else if(x===j)b.classList.add('no');}); if(j===c.k)sc++; var w=$('.qz-w',R); w.hidden=false; w.innerHTML=sb(c.s)+'<span>'+nb(c.w)+'</span>'; var n=$('.qz-n',R); n.hidden=false; n.innerHTML='<div class="center"><button class="btn" id="qN">'+(i<Q.length-1?'Дальше':'Результат')+'</button></div>'; }
+    function end(){ R.innerHTML='<div class="big">'+sc+' / '+Q.length+'</div><p class="lead" style="margin-inline:auto;text-align:center">'+nb(sc===Q.length?'Чисто. Платье теперь выберешь с первого раза.':sc>=4?'Почти. Вернись к «für молчит».':'Палец всё ещё лучше слов. Пройди раздел про развилку.')+'</p><div class="center mt-s"><button class="btn sm" id="qR">Ещё раз</button></div>'; }
+    R.addEventListener('click',function(e){ var b=e.target.closest('.qo'); if(b&&!b.disabled){pick(+b.dataset.j);return;} if(e.target.closest('#qN')){i++; i<Q.length?dr():end(); return;} if(e.target.closest('#qR')){i=0;sc=0;dr();} }); dr();
+  })();
+
+  /* own exercise */
+  (function(){ var O=['-e','-en','-em','-er','-es','ничего'],E=[
+    {a:'Was für ein',b:' Job hast du?',ru:'Какая у тебя работа?',k:1,w:'Haben требует Akkusativ. Der Job, значит einen.'},
+    {a:'Mit welch',b:' Freundin gehst du?',ru:'С какой подругой идёшь?',k:3,w:'Mit даёт Dativ, die Freundin. Значит welcher.'},
+    {a:'In was für ein',b:' Café sitzt ihr?',ru:'В каком кафе сидите?',k:2,w:'Где? Dativ, das Café. Einem.'},
+    {a:'Welch',b:' Schuhe ziehst du an?',ru:'Какие туфли наденешь?',k:0,w:'Множественное, Akkusativ. Welche.'},
+    {a:'So ein',b:' Stadt gefällt mir.',ru:'Такой город мне нравится.',k:0,w:'Die Stadt, Nominativ. Eine.'},
+    {a:'Nach solch ein',b:' Tag schlafe ich gut.',ru:'После такого дня хорошо сплю.',k:2,w:'Nach, Dativ, der Tag. Einem. Solch отдыхает.'},
+    {a:'Bei solch schön',b:' Wetter bleibe ich nicht zu Hause.',ru:'В такую хорошую погоду дома не сижу.',k:2,w:'Solch без окончания. Dativ, das Wetter. Работает schönem.'}
+  ],R=$('#exr');
+    R.innerHTML=E.map(function(x){return '<div class="xr"><div class="xr-q">'+x.a+'<u>?</u>'+x.b+'</div><small lang="ru">'+nb(x.ru)+'</small><div class="xr-b" lang="ru">'+O.map(function(o,j){return '<button class="xb" data-v="'+j+'">'+o+'</button>';}).join('')+'</div><div class="xr-a" hidden lang="ru"></div></div>';}).join('');
+    R.addEventListener('click',function(e){var b=e.target.closest('.xb'); if(!b)return; $$('.xb',b.parentNode).forEach(function(x){x.classList.remove('on');}); b.classList.add('on');});
+    $('#xC').onclick=function(){ var ok=0; $$('.xr',R).forEach(function(c,i){ var d=E[i],s=$('.xb.on',c),g=s&&+s.dataset.v===d.k; if(g)ok++; var A=$('.xr-a',c),end=O[d.k]==='ничего'?'':O[d.k].slice(1); A.hidden=false; A.innerHTML='<svg style="color:'+(g?'#2F8F80':'#C4543C')+'"><use href="#i-'+(g?'check':'x')+'"/></svg><b lang="de">'+d.a+end+d.b+'</b><span>'+nb(d.w)+'</span>'; $('u',c).textContent=O[d.k]; }); var S=$('#xS'); S.hidden=false; S.innerHTML='Верно <b class="k">'+ok+' из '+E.length+'</b>'; };
+  })();
+
+  /* videos */
+  $$('video[data-v]').forEach(function(v){ if(!('IntersectionObserver' in window)){v.poster=v.dataset.poster;v.src=v.dataset.src;v.controls=true;return;} new IntersectionObserver(function(es,o){if(es[0].isIntersecting){v.poster=v.dataset.poster;o.disconnect();}},{rootMargin:'900px 0px'}).observe(v); if(reduce){v.controls=true;v.src=v.dataset.src;return;} vis(v,function(){if(!v.src)v.src=v.dataset.src;v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});},function(){v.pause();},.3); });
+
+  /* my mistakes */
+  (function(){ var L=$('#mqL'),R=$('#mqR'); if(!L)return; var q=[['Lesen, Teil 2, задание 3',1],['Hören, Teil 1, задание 2',0],['Sprachbausteine, задание 5',1],['Schreiben, формула письма',0],['Sprechen, Teil 2, реакция',1]]; L.innerHTML=q.map(function(x){return '<div class="mq'+(x[1]?' bad':'')+'"><svg><use href="#i-'+(x[1]?'x':'check')+'"/></svg>'+x[0]+'</div>';}).join(''); R.innerHTML=q.filter(function(x){return x[1];}).map(function(x){return '<div class="mq mi"><svg style="color:#C4543C"><use href="#i-x"/></svg>'+x[0]+'</div>';}).join(''); var B=$$('.mq.bad',L),I=$$('.mi',R),N=$('#mqN'),i=0,t=null; function tk(){ if(i>=I.length){i=0;I.forEach(function(r){r.classList.remove('on');});B.forEach(function(r){r.classList.remove('pk');});N.textContent='0';return;} I[i].classList.add('on');B[i].classList.add('pk');i++;N.textContent=i; } if(reduce){I.forEach(function(r){r.classList.add('on');});N.textContent=I.length;return;} vis(R,function(){if(!t)t=setInterval(tk,1300);tk();},function(){clearInterval(t);t=null;}); })();
+
+  /* dock */
+  (function(){ var d=$('#dock'),t=$('#tariffs'),h=$('.hero'); if(!d||!('IntersectionObserver' in window))return; var p=false,a=false; function u(){d.classList.toggle('show',p&&!a);} new IntersectionObserver(function(e){p=!e[0].isIntersecting;u();}).observe(h); new IntersectionObserver(function(e){a=e[0].isIntersecting;u();},{rootMargin:'0px 0px -20% 0px'}).observe(t); })();
+
+  /* reveals */
+  $$('.count').forEach(function(c){ var to=+c.dataset.to,s=c.dataset.suf||''; if(!anim){c.textContent=to+s;return;} var o={v:0}; G.to(o,{v:to,duration:1.5,ease:'power2.out',scrollTrigger:{trigger:c,start:'top 92%',once:true},onUpdate:function(){c.textContent=Math.round(o.v)+s;}}); });
+  if(anim){
+    $$('.h,.apho').forEach(function(h){ var t=h; if(ST){try{t=new SplitText(h,{type:'words',wordsClass:'wd'}).words; t.forEach(function(w){w.style.display='inline-block';});}catch(e){}} G.from(t,{yPercent:40,duration:.7,ease:'power3.out',stagger:.05,scrollTrigger:{trigger:h,start:'top 90%',once:true}}); });
+    var rs='.tile,.dc,.bc,.cse,.ch,.bf,.tf,.et,.mc,.xr,.lk,.dst div';
+    G.set(rs,{y:34});
+    ScrollTrigger.batch(rs,{start:'top 95%',once:true,onEnter:function(b){G.to(b,{y:0,duration:.75,ease:'power3.out',stagger:.07,clearProps:'transform'});}});
+    /* slanted panels drift apart a little, desk objects float in */
+    $$('.dec').forEach(function(d,i){ G.fromTo(d,{y:i%2?-36:36,rotation:i%2?-7:7},{y:i%2?30:-30,rotation:i%2?5:-5,ease:'none',scrollTrigger:{trigger:d.parentNode,start:'top bottom',end:'bottom top',scrub:true}}); });
+    /* who-works blocks pop */
+    ScrollTrigger.batch('.wrk',{start:'top 90%',once:true,onEnter:function(b){G.from(b,{scale:.4,duration:.6,ease:'back.out(3)',stagger:.1});}});
+    /* flat-lay assembles */
+    if($('.lay')){ var tl=G.timeline({scrollTrigger:{trigger:'.lay',start:'top 78%',once:true}}); tl.from('.lay .wood',{scale:.72,rotation:-30,duration:.9,ease:'back.out(1.4)'}).from('.lay .env',{x:-90,y:-90,rotation:-30,duration:.7,ease:'power3.out'},'-=.45').from('.lay .card',{x:90,y:90,rotation:24,duration:.7,ease:'power3.out'},'-=.45').from('.cubes i',{y:-40,rotation:-18,duration:.65,ease:'bounce.out',stagger:.1},'-=.25').from('.lay .ol',{x:90,y:60,rotation:30,duration:.7,ease:'power2.out'},'-=.5'); }
+    if($('.phm')) G.fromTo('.phm',{rotation:12,y:40},{rotation:-3,y:-20,ease:'none',scrollTrigger:{trigger:'.phm',start:'top bottom',end:'bottom top',scrub:true}});
+    if($('.dkfig img')) G.fromTo('.dkfig img',{y:50},{y:-20,ease:'none',scrollTrigger:{trigger:'.dkfig',start:'top bottom',end:'bottom top',scrub:true}});
+    G.to('#prog',{scaleX:1,ease:'none',scrollTrigger:{trigger:'main',start:'top top',end:'bottom bottom',scrub:.3}});
+    window.addEventListener('load',function(){ScrollTrigger.refresh();});
+    if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ScrollTrigger.refresh();});
+  }
+}
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',xInit); else xInit();
+</script>
+
+</body>
+</html>
